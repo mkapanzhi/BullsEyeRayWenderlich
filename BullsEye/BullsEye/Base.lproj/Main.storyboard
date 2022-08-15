@@ -65,7 +65,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-gf-DQJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-gf-DQJ">
                                 <rect key="frame" x="94" y="314" width="140.5" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140.5" id="pKY-D8-i5c"/>
@@ -78,8 +78,8 @@
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgC-tR-5el"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-Rk-cFl">
-                                <rect key="frame" x="780.5" y="314" width="45" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-Rk-cFl">
+                                <rect key="frame" x="780.5" y="327" width="45" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="gzJ-41-Xvp"/>
                                 </constraints>
@@ -119,12 +119,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pAM-gf-DQJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8TU-fa-fcg"/>
+                            <constraint firstItem="pAM-gf-DQJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="314" id="N33-1T-igv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uim-Rk-cFl" secondAttribute="trailing" constant="26.5" id="V0T-nk-t3O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uim-Rk-cFl" secondAttribute="bottom" constant="35" id="b2c-rY-hSQ"/>
                             <constraint firstItem="IWm-Sv-weZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="dr8-HI-MFl"/>
                             <constraint firstItem="IWm-Sv-weZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w7J-r7-3ZC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="slider" destination="0fe-lo-MO8" id="eIF-Nr-30F"/>
+                        <outlet property="targetLabel" destination="HlP-Sf-YHR" id="oBV-lR-Wj1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
